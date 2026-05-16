@@ -43,16 +43,36 @@
             sling:resourceType="core/franklin/components/block/v1/block"
             name="Cards Category"
             filter="cards-category">
-          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" image="/content/dam/mikesmith/walmart-spark-xwalk/getting-started-60-px.png" text="&lt;h3>&lt;a href=&quot;/l/en/category/o13p6ak7b6-getting-started&quot;>Getting Started&lt;/a>&lt;/h3>"/>
-          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" image="/content/dam/mikesmith/walmart-spark-xwalk/earnings-60-px.png" text="&lt;h3>&lt;a href=&quot;/earnings&quot;>Earnings&lt;/a>&lt;/h3>"/>
-          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" image="/content/dam/mikesmith/walmart-spark-xwalk/using-the-app-60-px.png" text="&lt;h3>&lt;a href=&quot;/l/en/category/1v9uiar66o-using-the-app&quot;>Using the App&lt;/a>&lt;/h3>"/>
-          <item_3 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" image="/content/dam/mikesmith/walmart-spark-xwalk/arrival-pick-up-60-px.png" text="&lt;h3>&lt;a href=&quot;/l/en/category/n249ylogcv-arrival-and-pick-up&quot;>Arrival &amp;amp; Pick Up&lt;/a>&lt;/h3>"/>
-          <item_4 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" image="/content/dam/mikesmith/walmart-spark-xwalk/delivery-60-px.png" text="&lt;h3>&lt;a href=&quot;/l/en/category/3gwoma93hy-delivery&quot;>Delivery&lt;/a>&lt;/h3>"/>
-          <item_5 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" image="/content/dam/mikesmith/walmart-spark-xwalk/shopping-delivery-60-px.png" text="&lt;h3>&lt;a href=&quot;/l/en/category/97duxwfj69-shopping-delivery&quot;>Shopping &amp;amp; Delivery&lt;/a>&lt;/h3>"/>
-          <item_6 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" image="/content/dam/mikesmith/walmart-spark-xwalk/returns-60-px.png" text="&lt;h3>&lt;a href=&quot;/l/en/category/ts2xsm8ck8-returns&quot;>Returns&lt;/a>&lt;/h3>"/>
-          <item_7 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" image="/content/dam/mikesmith/walmart-spark-xwalk/troubleshooting-60-px.png" text="&lt;h3>&lt;a href=&quot;/l/en/category/pgm8rba4ol-troubleshooting&quot;>Troubleshooting&lt;/a>&lt;/h3>"/>
-          <item_8 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" image="/content/dam/mikesmith/walmart-spark-xwalk/faq-60-px.png" text="&lt;h3>&lt;a href=&quot;/l/en/category/4mpccxtgwr-faqs&quot;>FAQs&lt;/a>&lt;/h3>"/>
-          <item_9 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" image="/content/dam/mikesmith/walmart-spark-xwalk/additional-resources-60-px.png" text="&lt;h3>&lt;a href=&quot;/l/en/category/vz9ety2fz7-additional-resources&quot;>Additional Resources&lt;/a>&lt;/h3>"/>
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" text="&lt;h3>&lt;a href=&quot;/l/en/category/o13p6ak7b6-getting-started&quot;>Getting Started&lt;/a>&lt;/h3>">
+            <image jcr:primaryType="nt:unstructured" fileReference="/content/dam/mikesmith/walmart-spark-xwalk/getting-started-60-px.png"/>
+          </item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" text="&lt;h3>&lt;a href=&quot;/earnings&quot;>Earnings&lt;/a>&lt;/h3>">
+            <image jcr:primaryType="nt:unstructured" fileReference="/content/dam/mikesmith/walmart-spark-xwalk/earnings-60-px.png"/>
+          </item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" text="&lt;h3>&lt;a href=&quot;/l/en/category/1v9uiar66o-using-the-app&quot;>Using the App&lt;/a>&lt;/h3>">
+            <image jcr:primaryType="nt:unstructured" fileReference="/content/dam/mikesmith/walmart-spark-xwalk/using-the-app-60-px.png"/>
+          </item_2>
+          <item_3 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" text="&lt;h3>&lt;a href=&quot;/l/en/category/n249ylogcv-arrival-and-pick-up&quot;>Arrival &amp;amp; Pick Up&lt;/a>&lt;/h3>">
+            <image jcr:primaryType="nt:unstructured" fileReference="/content/dam/mikesmith/walmart-spark-xwalk/arrival-pick-up-60-px.png"/>
+          </item_3>
+          <item_4 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" text="&lt;h3>&lt;a href=&quot;/l/en/category/3gwoma93hy-delivery&quot;>Delivery&lt;/a>&lt;/h3>">
+            <image jcr:primaryType="nt:unstructured" fileReference="/content/dam/mikesmith/walmart-spark-xwalk/delivery-60-px.png"/>
+          </item_4>
+          <item_5 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" text="&lt;h3>&lt;a href=&quot;/l/en/category/97duxwfj69-shopping-delivery&quot;>Shopping &amp;amp; Delivery&lt;/a>&lt;/h3>">
+            <image jcr:primaryType="nt:unstructured" fileReference="/content/dam/mikesmith/walmart-spark-xwalk/shopping-delivery-60-px.png"/>
+          </item_5>
+          <item_6 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" text="&lt;h3>&lt;a href=&quot;/l/en/category/ts2xsm8ck8-returns&quot;>Returns&lt;/a>&lt;/h3>">
+            <image jcr:primaryType="nt:unstructured" fileReference="/content/dam/mikesmith/walmart-spark-xwalk/returns-60-px.png"/>
+          </item_6>
+          <item_7 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" text="&lt;h3>&lt;a href=&quot;/l/en/category/pgm8rba4ol-troubleshooting&quot;>Troubleshooting&lt;/a>&lt;/h3>">
+            <image jcr:primaryType="nt:unstructured" fileReference="/content/dam/mikesmith/walmart-spark-xwalk/troubleshooting-60-px.png"/>
+          </item_7>
+          <item_8 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" text="&lt;h3>&lt;a href=&quot;/l/en/category/4mpccxtgwr-faqs&quot;>FAQs&lt;/a>&lt;/h3>">
+            <image jcr:primaryType="nt:unstructured" fileReference="/content/dam/mikesmith/walmart-spark-xwalk/faq-60-px.png"/>
+          </item_8>
+          <item_9 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" text="&lt;h3>&lt;a href=&quot;/l/en/category/vz9ety2fz7-additional-resources&quot;>Additional Resources&lt;/a>&lt;/h3>">
+            <image jcr:primaryType="nt:unstructured" fileReference="/content/dam/mikesmith/walmart-spark-xwalk/additional-resources-60-px.png"/>
+          </item_9>
           <item_10 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Category Card" model="category-card" text="&lt;h3>&lt;a href=&quot;/l/en/category/57ypsrmsxl-rewards-category&quot;>Rewards&lt;/a>&lt;/h3>"/>
         </cards-category>
       </section_1>
