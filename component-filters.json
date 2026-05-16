@@ -24,7 +24,11 @@
       "table",
       "text",
       "title",
-      "video"
+      "video",
+      "search-help",
+      "cards-category",
+      "cards-article",
+      "modal"
     ]
   },
   {

@@ -33,6 +33,14 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Blue",
+              "value": "blue"
+            },
+            {
+              "name": "Light",
+              "value": "light"
             }
           ]
         }
@@ -59,7 +67,11 @@
         "table",
         "text",
         "title",
-        "video"
+        "video",
+        "search-help",
+        "cards-category",
+        "cards-article",
+        "modal"
       ]
     }
   ]

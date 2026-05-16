@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <entry key="name">walmart-spark-xwalk-content</entry>
+  <entry key="version">1.0.0</entry>
+  <entry key="group">mikesmith</entry>
+  <entry key="description">Spark Driver Help Center content for walmart-spark-xwalk</entry>
+  <entry key="packageType">content</entry>
+</properties>

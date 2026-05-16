@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+  <jcr:content
+      jcr:primaryType="nt:unstructured"
+      jcr:title="About your earnings"
+      jcr:description="Weekly earnings can be viewed in the Earnings overview, which shows confirmed earnings from service offers, as well as tips and incentives."
+      sling:resourceType="core/franklin/components/page/v1/page">
+
+    <section_0
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section"
+        style="blue"
+        name="Search">
+      <search-help
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/block/v1/block"
+          name="Search Help"
+          model="search-help"
+          source="/query-index.json"/>
+    </section_0>
+
+    <section_1
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section"
+        name="Article">
+      <breadcrumb
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>&lt;a href=&quot;/&quot;>All Categories&lt;/a> &amp;gt; &lt;a href=&quot;/earnings&quot;>Earnings&lt;/a> &amp;gt; About your earnings&lt;/p>"/>
+      <heading
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/title/v1/title"
+          title="About your earnings"
+          titleType="h1"/>
+      <intro
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>Weekly earnings can be viewed in the &lt;em>Earnings&lt;/em> overview, which shows confirmed earnings from service offers, as well as tips and incentives. Trip earnings may vary based on factors like distance traveled and order size.&lt;/p>"/>
+      <receiving-tips
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/title/v1/title"
+          title="Receiving tips"
+          titleType="h4"/>
+      <tips-text-1
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>Customers may tip before or after a service is completed for some offer types.&lt;/p>&lt;p>Most tips come through the app, but sometimes customers offer cash tips. You receive 100% of the confirmed customer tips.&lt;/p>&lt;p>The estimated earnings shown on the offer card include any pre-tips.&lt;/p>"/>
+      <pre-tip
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>&lt;strong>Pre-tip&lt;/strong>&lt;/p>"/>
+      <post-tip
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>&lt;strong>Post-tip&lt;/strong>&lt;/p>"/>
+      <processing-tips
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>&lt;strong>Processing tips to your earnings account&lt;/strong>&lt;/p>&lt;p>Tips that are pending or processing are called unconfirmed tips.&lt;/p>&lt;ul>&lt;li>After a customer confirms the tip, it's processed and added to your confirmed earnings screen in app.&lt;/li>&lt;li>It generally takes 24 hours after confirmation for tips to display in app.&lt;/li>&lt;li>If tips were confirmed after the week in which they were earned, they are added to your &lt;em>Confirmed earnings&lt;/em> the following week.&lt;/li>&lt;/ul>&lt;p>The &lt;em>Earnings&lt;/em> tab allows you to see any changes in your earnings breakdown.&lt;/p>"/>
+      <incentives-heading
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/title/v1/title"
+          title="Earning with incentives"
+          titleType="h4"/>
+      <incentives-text
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>You can earn more through the incentive program by completing a certain number of trips within a specific timeframe. More details about incentives are available in app.&lt;/p>&lt;p>To view your eligibility for incentives, you can:&lt;/p>&lt;ol>&lt;li>Tap &lt;strong>More&lt;/strong> (iOS) or &lt;strong>Menu&lt;/strong> (Android).&lt;/li>&lt;li>Tap &lt;strong>Incentives Programs&lt;/strong>.&lt;/li>&lt;/ol>&lt;p>The &lt;em>Incentive Programs&lt;/em> screen displays available incentives.&lt;/p>"/>
+      <incentives-image
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/image/v1/image"
+          image="/content/dam/mikesmith/walmart-spark-xwalk/about-your-earnings-01.gif"
+          imageAlt="About Your Earnings"/>
+      <closing-text
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>You can track your incentive progress in the app as you complete qualifying trips.&lt;/p>"/>
+      <modal-block
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/block/v1/block"
+          name="Modal"
+          model="modal"
+          link="/pre-tip"
+          linkText="Pre-tip"/>
+    </section_1>
+
+    <section_2
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section">
+      <privacy-link
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>&lt;a href=&quot;https://drive4spark.walmart.com/documents/us/sparkdriverappprivacypolicy&quot;>Spark Driver App Privacy Statement&lt;/a>&lt;/p>"/>
+    </section_2>
+
+  </jcr:content>
+</jcr:root>

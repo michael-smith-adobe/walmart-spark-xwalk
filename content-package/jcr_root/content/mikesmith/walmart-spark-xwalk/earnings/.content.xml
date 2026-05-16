@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+  <jcr:content
+      jcr:primaryType="nt:unstructured"
+      jcr:title="Earnings"
+      jcr:description="Earnings category - 7 articles about earnings, tips, and incentives."
+      sling:resourceType="core/franklin/components/page/v1/page">
+
+    <section_0
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section"
+        style="blue"
+        name="Search">
+      <search-help
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/block/v1/block"
+          name="Search Help"
+          model="search-help"
+          source="/query-index.json"/>
+    </section_0>
+
+    <section_1
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section"
+        name="Category Header">
+      <breadcrumb
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>&lt;a href=&quot;/&quot;>All Categories&lt;/a> &amp;gt; Earnings&lt;/p>"/>
+      <icon
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/image/v1/image"
+          image="/content/dam/mikesmith/walmart-spark-xwalk/earnings-60-px.png"
+          imageAlt="Earnings icon"/>
+      <heading
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/title/v1/title"
+          title="Earnings"
+          titleType="h2"/>
+      <count
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>7 articles&lt;/p>"/>
+    </section_1>
+
+    <section_2
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section"
+        name="Articles">
+      <cards-article
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/block/v1/block"
+          name="Cards Article"
+          filter="cards-article">
+        <item_0
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Article Card"
+            model="article-card"
+            text="&lt;h3>&lt;a href=&quot;/l/en/article/vie3jr0ml9-how-to-apply-for-one-pay-cash&quot;>How to apply for OnePay Cash&lt;/a>&lt;/h3>&lt;p>Applying for OnePay Cash. If you're approved to drive on the Spark Driver™ platform and you would like to sign up for a OnePay Cash account, you can: Tap Earnings Account. Tap APPLY FOR ONEPAY CASH.…&lt;/p>"/>
+        <item_1
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Article Card"
+            model="article-card"
+            text="&lt;h3>&lt;a href=&quot;/about-your-earnings&quot;>About your earnings&lt;/a>&lt;/h3>&lt;p>Weekly earnings can be viewed in the Earnings overview, which shows confirmed earnings from service offers, as well as tips and incentives. Trip earnings may vary based on factors like distance trave…&lt;/p>"/>
+        <item_2
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Article Card"
+            model="article-card"
+            text="&lt;h3>&lt;a href=&quot;/l/en/article/h6wdpfy9hn-earnings&quot;>Earnings FAQ&lt;/a>&lt;/h3>&lt;p>Overview. How will I get my confirmed earnings, tips, and incentives? Confirmed earnings, tips, and incentives are sent to your primary earnings account. You can choose to get your earnings through O…&lt;/p>"/>
+        <item_3
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Article Card"
+            model="article-card"
+            text="&lt;h3>&lt;a href=&quot;/l/en/article/kd23c1ct1j-viewing-your-earnings&quot;>Viewing your earnings&lt;/a>&lt;/h3>&lt;p>To view your earnings for each week, day, or trip in the Spark Driver™ app, you can: Tap EARNINGS (iOS) or Menu &amp;gt; Earnings (Android). View the Earnings screen to see your current week's Confirmed e…&lt;/p>"/>
+        <item_4
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Article Card"
+            model="article-card"
+            text="&lt;h3>&lt;a href=&quot;/l/en/article/94tj5amwa5-how-to-switch-earnings-accounts&quot;>How to update earnings accounts&lt;/a>&lt;/h3>&lt;p>If you want to update where your earnings are sent, you can change your earnings account in the Spark Driver™ app. This includes linking a bank account or OnePay Cash account. If you would like to ch…&lt;/p>"/>
+        <item_5
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Article Card"
+            model="article-card"
+            text="&lt;h3>&lt;a href=&quot;/l/en/article/sdxetqs8op-earnings-qby&quot;>Spark Driver Rewards FAQ&lt;/a>&lt;/h3>&lt;p>Overview. How will I receive my confirmed earnings? Your confirmed earnings are deposited into your primary earnings account. You can elect to receive your earnings through ONE or direct deposit. If…&lt;/p>"/>
+        <item_6
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Article Card"
+            model="article-card"
+            text="&lt;h3>&lt;a href=&quot;/l/en/article/d8dorui0f0-2025-tax-filing-faqs-xog&quot;>2025 Driver Tax Documents&lt;/a>&lt;/h3>&lt;p>If you consent to receive your tax documents electronically, your tax document will be available for download in your Spark Driver™ account January 31st. Otherwise, your tax documents will be mailed…&lt;/p>"/>
+      </cards-article>
+    </section_2>
+
+    <section_3
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section">
+      <privacy-link
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>&lt;a href=&quot;https://drive4spark.walmart.com/documents/us/sparkdriverappprivacypolicy&quot;>Spark Driver App Privacy Statement&lt;/a>&lt;/p>"/>
+    </section_3>
+
+  </jcr:content>
+</jcr:root>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+  <jcr:content
+      jcr:primaryType="nt:unstructured"
+      jcr:title="Spark Driver Help Center"
+      jcr:description="Spark Driver Help Center - Find answers to your questions about getting started, earnings, deliveries, and more."
+      sling:resourceType="core/franklin/components/page/v1/page">
+
+    <!-- Section 1: Blue hero with search and top articles -->
+    <section_0
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section"
+        style="blue"
+        name="Hero">
+      <search-help
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/block/v1/block"
+          name="Search Help"
+          model="search-help"
+          source="/query-index.json"/>
+      <top-articles-label
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>&lt;strong>Top Articles&lt;/strong>&lt;/p>"/>
+      <top-articles-links
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>&lt;a href=&quot;/l/en/article/5suign3gq1-account-under-review-and-deactivation-faqs&quot;>Account under review and deactivation FAQs&lt;/a> | &lt;a href=&quot;/l/en/article/74gbzkcdbb-state-by-state-alcohol-certification-information&quot;>State by state alcohol certification information&lt;/a> | &lt;a href=&quot;/l/en/article/5w4gke3bcl-viewing-california-driver-info&quot;>Viewing California driver info&lt;/a>&lt;/p>"/>
+    </section_0>
+
+    <!-- Section 2: Category cards grid -->
+    <section_1
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section"
+        name="Categories">
+      <cards-category
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/block/v1/block"
+          name="Cards Category"
+          filter="cards-category">
+        <item_0
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Category Card"
+            model="category-card"
+            image="/content/dam/mikesmith/walmart-spark-xwalk/getting-started-60-px.png"
+            text="&lt;h3>&lt;a href=&quot;/l/en/category/o13p6ak7b6-getting-started&quot;>Getting Started&lt;/a>&lt;/h3>"/>
+        <item_1
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Category Card"
+            model="category-card"
+            image="/content/dam/mikesmith/walmart-spark-xwalk/earnings-60-px.png"
+            text="&lt;h3>&lt;a href=&quot;/earnings&quot;>Earnings&lt;/a>&lt;/h3>"/>
+        <item_2
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Category Card"
+            model="category-card"
+            image="/content/dam/mikesmith/walmart-spark-xwalk/using-the-app-60-px.png"
+            text="&lt;h3>&lt;a href=&quot;/l/en/category/1v9uiar66o-using-the-app&quot;>Using the App&lt;/a>&lt;/h3>"/>
+        <item_3
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Category Card"
+            model="category-card"
+            image="/content/dam/mikesmith/walmart-spark-xwalk/arrival-pick-up-60-px.png"
+            text="&lt;h3>&lt;a href=&quot;/l/en/category/n249ylogcv-arrival-and-pick-up&quot;>Arrival &amp;amp; Pick Up&lt;/a>&lt;/h3>"/>
+        <item_4
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Category Card"
+            model="category-card"
+            image="/content/dam/mikesmith/walmart-spark-xwalk/delivery-60-px.png"
+            text="&lt;h3>&lt;a href=&quot;/l/en/category/3gwoma93hy-delivery&quot;>Delivery&lt;/a>&lt;/h3>"/>
+        <item_5
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Category Card"
+            model="category-card"
+            image="/content/dam/mikesmith/walmart-spark-xwalk/shopping-delivery-60-px.png"
+            text="&lt;h3>&lt;a href=&quot;/l/en/category/97duxwfj69-shopping-delivery&quot;>Shopping &amp;amp; Delivery&lt;/a>&lt;/h3>"/>
+        <item_6
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Category Card"
+            model="category-card"
+            image="/content/dam/mikesmith/walmart-spark-xwalk/returns-60-px.png"
+            text="&lt;h3>&lt;a href=&quot;/l/en/category/ts2xsm8ck8-returns&quot;>Returns&lt;/a>&lt;/h3>"/>
+        <item_7
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Category Card"
+            model="category-card"
+            image="/content/dam/mikesmith/walmart-spark-xwalk/troubleshooting-60-px.png"
+            text="&lt;h3>&lt;a href=&quot;/l/en/category/pgm8rba4ol-troubleshooting&quot;>Troubleshooting&lt;/a>&lt;/h3>"/>
+        <item_8
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Category Card"
+            model="category-card"
+            image="/content/dam/mikesmith/walmart-spark-xwalk/faq-60-px.png"
+            text="&lt;h3>&lt;a href=&quot;/l/en/category/4mpccxtgwr-faqs&quot;>FAQs&lt;/a>&lt;/h3>"/>
+        <item_9
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Category Card"
+            model="category-card"
+            image="/content/dam/mikesmith/walmart-spark-xwalk/additional-resources-60-px.png"
+            text="&lt;h3>&lt;a href=&quot;/l/en/category/vz9ety2fz7-additional-resources&quot;>Additional Resources&lt;/a>&lt;/h3>"/>
+        <item_10
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/franklin/components/block/v1/block/item"
+            name="Category Card"
+            model="category-card"
+            text="&lt;h3>&lt;a href=&quot;/l/en/category/57ypsrmsxl-rewards-category&quot;>Rewards&lt;/a>&lt;/h3>"/>
+      </cards-category>
+    </section_1>
+
+    <!-- Section 3: Privacy link -->
+    <section_2
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section">
+      <privacy-link
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>&lt;a href=&quot;https://drive4spark.walmart.com/documents/us/sparkdriverappprivacypolicy&quot;>Spark Driver App Privacy Statement&lt;/a>&lt;/p>"/>
+    </section_2>
+
+  </jcr:content>
+</jcr:root>

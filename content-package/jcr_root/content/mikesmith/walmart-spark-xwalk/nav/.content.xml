@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+  <jcr:content
+      jcr:primaryType="nt:unstructured"
+      jcr:title="Navigation"
+      sling:resourceType="core/franklin/components/page/v1/page">
+
+    <!-- Section 1: Brand -->
+    <section_0
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section">
+      <brand-link
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>&lt;a href=&quot;/&quot;>Spark Driver&lt;/a>&lt;/p>"/>
+      <brand-logo
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/image/v1/image"
+          image="/content/dam/mikesmith/walmart-spark-xwalk/spark-driver-logo.png"
+          imageAlt="Spark Driver"/>
+    </section_0>
+
+    <!-- Section 2: Nav sections (empty) -->
+    <section_1
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section"/>
+
+    <!-- Section 3: Language selector -->
+    <section_2
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="core/franklin/components/section/v1/section">
+      <lang-label
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;p>&lt;strong>EN&lt;/strong>&lt;/p>"/>
+      <lang-list
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="core/franklin/components/text/v1/text"
+          text="&lt;ul>&lt;li>&lt;a href=&quot;/l/en&quot;>English&lt;/a>&lt;/li>&lt;/ul>"/>
+    </section_2>
+
+  </jcr:content>
+</jcr:root>
