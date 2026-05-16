@@ -1,7 +1,11 @@
 {
   "mappings": [
-    "/content/aem-block-collection/:/",
-    "/content/aem-block-collection/metadata:/metadata.json",
-    "/content/aem-block-collection/configuration:/.helix/config.json"
+    "/content/mikesmith/walmart-spark-xwalk/:/"
+  ],
+  "includes": [
+    "/content/mikesmith/walmart-spark-xwalk/**"
+  ],
+  "excludes": [
+    "/content/mikesmith/walmart-spark-xwalk/**/drafts/**"
   ]
 }

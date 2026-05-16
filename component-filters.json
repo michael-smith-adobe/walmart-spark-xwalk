@@ -34,6 +34,18 @@
     ]
   },
   {
+    "id": "cards-article",
+    "components": [
+      "article-card"
+    ]
+  },
+  {
+    "id": "cards-category",
+    "components": [
+      "category-card"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"

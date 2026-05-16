@@ -161,6 +161,37 @@
     ]
   },
   {
+    "id": "article-card",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Article Content",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "category-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Icon Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Category Link",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
@@ -331,6 +362,18 @@
         "name": "attribution",
         "value": "",
         "label": "Attribution",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "search-help",
+    "fields": [
+      {
+        "component": "text",
+        "name": "source",
+        "value": "",
+        "label": "Query Index URL",
         "valueType": "string"
       }
     ]
