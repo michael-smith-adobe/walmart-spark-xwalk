@@ -1,84 +1,134 @@
-body.modal-open {
-  overflow: hidden;
+/* modal trigger — styled as button */
+.modal-trigger {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 12px;
 }
 
-.modal dialog::backdrop {
-  background-color: rgb(19 19 19 / 75%);
+.modal-trigger strong {
+  display: block;
+  padding: 12px 24px;
+  background-color: var(--link-color);
+  color: #fff;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.2s;
 }
 
-.modal dialog {
-  overscroll-behavior: none;
-  overflow-y: hidden;
-  width: calc(100vw - 48px);
-  max-width: 900px;
-  max-height: calc(100dvh - (2 * var(--header-height)));
-  padding: 0;
-  border: 1px solid var(--dark-color);
+.modal-trigger:hover strong {
+  background-color: #1954c6;
 }
 
-.modal dialog .modal-content {
-  box-sizing: border-box;
-  overflow-y: auto;
-  overscroll-behavior: none;
+/* modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgb(0 0 0 / 40%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+.modal-overlay[aria-hidden='true'] {
+  display: none;
+}
+
+/* modal dialog */
+.modal-dialog {
+  background-color: #fff;
   width: 100%;
-  max-height: calc(100dvh - (2 * var(--header-height)) - 48px);
-  padding: 24px;
-  padding-top: 0;
-  margin-top: 44px;
+  max-width: 600px;
+  max-height: 90vh;
+  border-radius: 16px 16px 0 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (width >= 900px) {
-  .modal dialog {
-    width: calc(100vw - 64px);
+  .modal-overlay {
+    align-items: center;
   }
-  
-  .modal dialog .modal-content {
-    max-height: calc(100dvh - (2 * var(--header-height)) - 64px);
-    padding: 32px;
-    padding-top: 0;
+
+  .modal-dialog {
+    border-radius: 16px;
+    max-height: 80vh;
   }
 }
 
-.modal .close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 44px;
-  height: 44px;
-  margin: 0;
+/* header — blue bar with X and parent label */
+.modal-header {
+  background-color: #0071ce;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  min-height: 72px;
+}
+
+.modal-close {
+  background: none;
   border: none;
-  border-radius: 0;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
   padding: 0;
-  background-color: transparent;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.modal-close:hover {
+  opacity: 0.8;
+}
+
+.modal-parent {
+  font-family: var(--body-font-family);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* yellow accent bar */
+.modal-accent {
+  height: 4px;
+  background: linear-gradient(to right, #ffc220 0%, #ffc220 18%, transparent 18%);
+}
+
+/* body content */
+.modal-body {
+  padding: 24px;
+}
+
+.modal-body h1 {
+  font-family: var(--body-font-family);
+  font-size: 24px;
+  font-weight: 700;
   color: var(--text-color);
-  line-height: 0;
+  margin: 0 0 16px;
+  line-height: 1.2;
 }
 
-.modal .close-button .icon.icon-close {
-  content: '';
-  width: 24px;
-  height: 24px;
+.modal-body p {
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--text-color);
+  margin: 0 0 16px;
 }
 
-.modal .close-button .icon.icon-close::before,
-.modal .close-button .icon.icon-close::after {
-  content: '';
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  width: 24px;
-  height: 2px;
-  border-radius: 2px;
-  background-color: currentcolor;
+.modal-body ul {
+  margin: 0 0 16px;
+  padding-left: 24px;
 }
 
-.modal .close-button .icon.icon-close::after {
-  transform: translate(-50%, -50%) rotate(-45deg)
-}
-
-.modal dialog .section {
-  padding: 0;
+.modal-body li {
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--text-color);
+  margin-bottom: 8px;
 }
