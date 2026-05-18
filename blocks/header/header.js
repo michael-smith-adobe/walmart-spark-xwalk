@@ -138,15 +138,21 @@ export default async function decorate(block) {
   });
 
   const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('a');
-  if (brandLink) {
-    brandLink.className = '';
-    const wrapper = brandLink.closest('.button-container');
-    if (wrapper) wrapper.className = '';
+  if (navBrand) {
+    const brandLink = navBrand.querySelector('a');
     const picture = navBrand.querySelector('picture');
-    if (picture) {
-      brandLink.textContent = '';
-      brandLink.append(picture);
+    if (brandLink) {
+      brandLink.className = '';
+      const wrapper = brandLink.closest('.button-container');
+      if (wrapper) wrapper.className = '';
+    }
+    if (picture && brandLink) {
+      const link = document.createElement('a');
+      link.href = brandLink.href || '/';
+      link.append(picture);
+      const pictureP = picture.closest('p') || picture.parentElement;
+      pictureP.replaceWith(link);
+      if (brandLink.closest('p')) brandLink.closest('p').remove();
     }
   }
 
