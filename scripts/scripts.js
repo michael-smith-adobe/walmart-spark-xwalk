@@ -117,6 +117,20 @@ function decorateButtons(main) {
  * Decorates the main element.
  * @param {Element} main The main element
  */
+/**
+ * Moves instrumentation attributes from source to target element for UE compatibility.
+ * @param {Element} source The source element
+ * @param {Element} target The target element
+ */
+export function moveInstrumentation(source, target) {
+  [...source.attributes]
+    .filter((attr) => attr.name.startsWith('data-aue-') || attr.name.startsWith('data-richtext-'))
+    .forEach((attr) => {
+      target.setAttribute(attr.name, attr.value);
+      source.removeAttribute(attr.name);
+    });
+}
+
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   decorateIcons(main);
