@@ -77,6 +77,12 @@
     ]
   },
   {
+    "id": "modal",
+    "components": [
+      "modal-item"
+    ]
+  },
+  {
     "id": "table",
     "components": [
       "table-row"

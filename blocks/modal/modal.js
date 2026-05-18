@@ -122,7 +122,9 @@ export async function openModal(fragmentUrl) {
   dialog.prepend(closeButton);
 
   dialog.addEventListener('click', (e) => {
-    const { left, right, top, bottom } = dialog.getBoundingClientRect();
+    const {
+      left, right, top, bottom,
+    } = dialog.getBoundingClientRect();
     const { clientX, clientY } = e;
     if (clientX < left || clientX > right || clientY < top || clientY > bottom) {
       dialog.close();
