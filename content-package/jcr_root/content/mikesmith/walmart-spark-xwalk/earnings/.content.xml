@@ -5,7 +5,7 @@
           xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
   <jcr:content
-      jcr:primaryType="nt:unstructured"
+      jcr:primaryType="cq:PageContent"
       jcr:title="Earnings"
       jcr:description="Earnings category - 7 articles about earnings, tips, and incentives."
       sling:resourceType="core/franklin/components/page/v1/page">

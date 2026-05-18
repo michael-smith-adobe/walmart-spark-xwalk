@@ -5,7 +5,7 @@
           xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
   <jcr:content
-      jcr:primaryType="nt:unstructured"
+      jcr:primaryType="cq:PageContent"
       jcr:title="Navigation"
       sling:resourceType="core/franklin/components/page/v1/page">
     <root
