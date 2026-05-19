@@ -5,5 +5,15 @@ export default function decorate(block) {
     const cols = [...row.children];
     if (cols[0]) cols[0].classList.add('cards-category-card-image');
     if (cols[1]) cols[1].classList.add('cards-category-card-body');
+
+    const link = row.querySelector('a');
+    if (link) {
+      row.style.cursor = 'pointer';
+      row.addEventListener('click', (e) => {
+        if (e.target.tagName !== 'A') {
+          link.click();
+        }
+      });
+    }
   });
 }
