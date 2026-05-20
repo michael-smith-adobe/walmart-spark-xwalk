@@ -1,8 +1,8 @@
 {
   "mappings": [
     "/content/mikesmith/walmart-spark-xwalk/:/"
-    "/content/mikesmith/walmart-spark-xwalk/.helix/placeholders.json"
-    "/content/mikesmith/walmart-spark-xwalk/.helix/workfront.json"
+    "/content/mikesmith/walmart-spark-xwalk/configuration:/.helix/placeholders.json"
+    "/content/mikesmith/walmart-spark-xwalk/configuration:/.helix/workfront.json"
   ],
   "includes": [
     "/content/mikesmith/walmart-spark-xwalk/**"
